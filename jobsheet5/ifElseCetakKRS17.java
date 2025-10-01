@@ -1,3 +1,5 @@
+package jobsheet5;
+
 import java.util.Scanner;
 
 public class ifElseCetakKRS17 {
@@ -27,6 +29,5 @@ public class ifElseCetakKRS17 {
         } else {
             System.out.println("Semester tidak valid");
         }
-        
     }
 }
