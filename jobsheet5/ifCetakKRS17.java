@@ -16,5 +16,10 @@ public class ifCetakKRS17 {
         } else {
             System.out.println("Registrasi ditolak. Silakan lunasi UKT terlebih dahulu");
         }
+
+        System.out.println(
+                uktLunas
+                        ? "Pembayaran UKT terverikasi\nSilakan cetak KRS dan minta tanda tangan DPA"
+                        : "Registrasi ditolak. Silakan lunasi UKT terlebih dahulu");
     }
 }
