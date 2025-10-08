@@ -84,18 +84,18 @@ public class CM1_17 {
         // tentukan status semester
         String statusSemester = (rataRata >= 70) ? "LULUS" : "TIDAK LULUS (Rata-rata < 70)";
 
-        // ---------------- Output Akhir ----------------
+  // ---------------- Output Tabel Sederhana ----------------
+        System.out.println();
         System.out.println("========== HASIL PENILAIAN AKADEMIK ==========");
         System.out.println("Nama\t: " + nama);
         System.out.println("NIM\t: " + nim);
         System.out.println("-----------------------------------------------------------");
-        System.out.printf("%-20s %-5s %-5s %-5s %-10s %-10s %-10s%n",
-                "Mata Kuliah", "UTS", "UAS", "Tugas", "Nilai Akhir", "Nilai Huruf", "Status");
+        System.out.println("Mata Kuliah\t\tUTS\tUAS\tTugas\tAkhir\tHuruf\tStatus");
         System.out.println("-----------------------------------------------------------");
-        System.out.printf("%-20s %-5.0f %-5.0f %-5.0f %-10.2f %-10s %-10s%n",
-                "Algoritma Pemrograman", uts1, uas1, tugas1, nilaiAkhir1, huruf1, status1);
-        System.out.printf("%-20s %-5.0f %-5.0f %-5.0f %-10.2f %-10s %-10s%n",
-                "Struktur Data", uts2, uas2, tugas2, nilaiAkhir2, huruf2, status2);
+        System.out.println("Algoritma Pemrograman\t" + uts1 + "\t" + uas1 + "\t" + tugas1 + "\t" + 
+                           String.format("%.2f", nilaiAkhir1) + "\t" + huruf1 + "\t" + status1);
+        System.out.println("Struktur Data\t\t" + uts2 + "\t" + uas2 + "\t" + tugas2 + "\t" + 
+                           String.format("%.2f", nilaiAkhir2) + "\t" + huruf2 + "\t" + status2);
         System.out.println("-----------------------------------------------------------");
         System.out.printf("Rata-rata Nilai Akhir : %.2f%n", rataRata);
         System.out.println("Status Semester       : " + statusSemester);
